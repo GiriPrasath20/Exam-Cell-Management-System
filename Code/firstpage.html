@@ -21,17 +21,6 @@ html
   padding: 8px 15px;
   border-radius: 10px;
 }
-.link
-{
-  text-decoration: none;
-  
-  font-weight: bold;
-}
-.w3-third h3
-{
-  font-weight: bold;
-  font-size: 30px;
-}
 </style>
 <head id="top">
     
@@ -39,36 +28,31 @@ html
     <link rel="icon" href="https://www.freeiconspng.com/uploads/study-icon-21.png"/>
 </head>
 <body style="background-color: rgb(134, 131, 131);color:white;">
-  
- <center> <h1 class="w3-wide" style="background-color: black; font: bold 55px Arial; padding: 15px 0px; color: white;  "> EXAM CELL AUTOMATION SYSTEM</h1></center>  
- <br>
- <br>
- <section class="w3-row-padding w3-center w3-light-grey">
-  <article class="w3-third">
-    <br>
-    <a class="link" href="login_student.php">
-    <img src="https://cdn-icons-png.flaticon.com/512/194/194931.png" alt="Random Name" style="width:60%; height:60%;">
-    <h3 >STUDENT LOGIN</h3></a>
-  </article>
-  <article class="w3-third">
-    <br>
-    <a class="link" href="login.php">
-    <img src="https://cdn-icons-png.flaticon.com/512/219/219986.png" alt="Random Name" style="width:60%; height:60%;">
-    <h3 >ADMIN LOGIN</h3></a>
-  </article>
-  <article class="w3-third">
-    <br>
-    <a class="link" href="register.php">
-    <img src="https://cdn-icons-png.flaticon.com/512/219/219983.png" alt="Random Name" style="width:60%; height:60%;">
-    <h3>REGISTER</h3></a>
-  </article>
-</section>
-      
-      <br>
-      <br>
+ <center> <h1 class="w3-wide" style="background-color: black; font: bold 55px Arial; color: white; text-decoration: underline;">DBMS PROJECT - EXAM CELL AUTOMATION SYSTEM</h1></center>  
+      <section style="padding-top: 20px;">
+        <img class="mySlides" src="https://www.myfirstcollege.com/wp-content/uploads/2019/04/amrita.jpg" style="width:100%; height: 500px;">
+        <img class="mySlides" src="https://www.insbright.com/wp-content/uploads/3205/study-wallpaper.jpg" style="width:100%; height: 500px;">
+        <img class="mySlides" src="https://asi.cs.fiu.edu/wp-content/uploads/sites/15/2016/06/Best-Study-Books-Photography-Wallpaper.jpeg" style="width:100%; height: 500px;">
+      </section>
+      <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
         
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 3000);
+        }
+        </script>
         <section class="w3-container w3-center w3-content" style="max-width:1000px;font-size: 25px; color: bisque; padding-top: 20px;">
-            <H1 style="font: bold 55px Monaco; color:navy; text-decoration: none;"> Introduction to Our Project</H1>
+            <H1 style="font: bold 45px Georgia; color:navy; text-decoration: underline;"> A Short intro to Our Project</H1>
             <p style="text-align: justify;">Amrita Vishwa Vidyapeetham is our college that includes a number of departments, Professors, Students, 
                 management staff, and other non-teaching staffs working in our college. Students get all kinds of 
                 exposure and knowledge coming to our college. The exam is one part of their life in college which they 
@@ -85,7 +69,23 @@ html
                 the system. Admin is also responsible for generating mark sheets for every registered student. Students can
                 also log into the exam cell and check their marks</p>
           </section>
-          
+          <section class="w3-row-padding w3-center w3-light-grey">
+            <article class="w3-third">
+              <br>
+              <img src="https://cdn-icons-png.flaticon.com/512/194/194931.png" alt="Random Name" style="width:50%; height:50%;">
+              <a href="login_student.php"><h3>STUDENT LOGIN</h3></a>
+            </article>
+            <article class="w3-third">
+              <br>
+              <img src="https://cdn-icons-png.flaticon.com/512/219/219986.png" alt="Random Name" style="width:70%; height:70%;">
+              <a href="login.php"><h3>ADMIN LOGIN</h3></a>
+            </article>
+            <article class="w3-third">
+              <br>
+              <img src="https://cdn-icons-png.flaticon.com/512/219/219983.png" alt="Random Name" style="width:50%; height:50%;">
+              <a href="register.php"><h3>REGISTER</h3></a>
+            </article>
+          </section>
           <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
             <P style="text-align: center;float: right;margin-right: 300px;"><span style="color: orange; margin-left: -250px;">PROJECT DONE BY:</span><br>
             
